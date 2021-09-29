@@ -14,3 +14,8 @@ model User {
   id    Int    @id @default(autoincrement())
   email String
 }
+
+model Organization {
+  id    Int    @id @default(autoincrement())
+  name String
+}

@@ -1,3 +1,3 @@
 import { launch } from './server'
 
-launch()
+launch(process.env.APP_PORT)

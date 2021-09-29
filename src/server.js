@@ -1,8 +1,9 @@
 import express from 'express'
 import routes from './routes'
-
 export async function launch(port = 4242) {
   const application = express()
+  application.use(express.urlencoded({ extended: true }));
+  application.use(express.json());
 
   /** Routes */
   application.use('/', routes)
